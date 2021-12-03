@@ -11,7 +11,7 @@ public class Voiture {
     }
 
     public String toString() {
-        String texte = "nom: " + nom + "  " + "vitesse : " + String.valueOf(vitesse);
+        String texte = "nom: " + nom + "  " + "vitesse : " + vitesse;
         return texte;
     }
 
