@@ -38,7 +38,7 @@ public class Voiture {
             System.out.println(" ");
     }
     public void depart(){
-position=0;
+position=position+vitesse;
     }
 
 }
