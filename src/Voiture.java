@@ -7,8 +7,10 @@ public class Voiture {
     public Voiture(String nom, int vitesse) {
         this.nom = nom;
         this.vitesse = vitesse;
+        this.position = 0;
 
     }
+
 
     public String toString() {
         String texte = "nom: " + nom + "  " + "vitesse : " + vitesse;
@@ -16,29 +18,39 @@ public class Voiture {
     }
 
     public String toString2() {
+        String lettre = "";
         for (int i = 0; i < position; i++) {
-            System.out.println(" ");
+            lettre += " ";
         }
-        String lettre = nom;
-        char resuslt = lettre.charAt(0);
-        System.out.println(resuslt);
-        System.out.println("\n");
+        char resuslt = nom.charAt(0);
+        lettre += resuslt + "\n";
+        System.out.println(lettre);
         return lettre;
     }
+
 
     public String getNom() {
         return nom;
 
     }
-    public boolean depasse(int limite){
-        return position>=limite;
+
+    public int getPosition() {
+        return position;
     }
-    public void avance(){
-        for (int i=0;i<vitesse;i++)
-            System.out.println(" ");
+
+    public boolean depasse(int limite) {
+        return position >= limite;
     }
-    public void depart(){
-position=position+vitesse;
+
+    public void avance() {
+
+        position += vitesse;
+
+
+    }
+
+    public void depart() {
+        position = 0;
     }
 
 }
