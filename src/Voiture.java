@@ -46,11 +46,21 @@ public class Voiture {
 
         position += vitesse;
 
+    }
 
+    public void reculer() {
+        position -= vitesse;
     }
 
     public void depart() {
         position = 0;
     }
 
+    public int getVitesse() {
+        return vitesse;
+    }
+
+    public void setVitesse(int vitesse) {
+        this.vitesse = vitesse;
+    }
 }
