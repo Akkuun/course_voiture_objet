@@ -3,14 +3,33 @@ public class Voiture {
     private String nom;
     private int position;
     private int vitesse;
+    private boolean isArrivedAller;
+    private boolean isArrivedRetour;
 
     public Voiture(String nom, int vitesse) {
         this.nom = nom;
         this.vitesse = vitesse;
         this.position = 0;
+        this.isArrivedAller=false;
+        this.isArrivedRetour=false;
 
     }
 
+    public boolean getisArrivedAller() {
+        return isArrivedAller;
+    }
+
+    public void setArrivedAller(boolean arrivedAller) {
+        isArrivedAller = arrivedAller;
+    }
+
+    public void setArrivedRetour(boolean arrivedRetour) {
+        isArrivedRetour = arrivedRetour;
+    }
+
+    public boolean getisArrivedRetour() {
+        return isArrivedRetour;
+    }
 
     public String toString() {
         String texte = "nom: " + nom + "  " + "vitesse : " + vitesse;
