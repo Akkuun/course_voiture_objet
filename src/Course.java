@@ -32,7 +32,7 @@ public class Course {
         v2.depart();
         Voiture gagnnant = new Voiture("", 0);
 
-//ddgm
+//ddgmj
         while (!isGagant) { // tant que ya pas de gagnant faire
 
             int voiture_selection = random(1, 2); //selection aleatoire de voiture
