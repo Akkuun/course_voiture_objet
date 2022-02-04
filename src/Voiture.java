@@ -75,8 +75,12 @@ public class Voiture {
         position = 0;
     }
 
-    public int getVitesse() {
+    public float getVitesse() {
         return vitesse;
+    }
+    public int acceleration(){
+        return vitesse+=vitesse/2;
+
     }
 
     public void setVitesse(int vitesse) {
